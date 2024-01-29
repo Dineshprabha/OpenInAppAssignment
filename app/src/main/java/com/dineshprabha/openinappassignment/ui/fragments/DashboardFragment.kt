@@ -118,7 +118,6 @@ class DashboardFragment : Fragment() {
                         setupDashboardItemData(userClickResponse)
                         val overallUrlChart : OverallUrlChart = userClickResponse.data.overall_url_chart
                         chartData = extractChartData(overallUrlChart)
-                        Log.i("DINESH", chartData.toString())
                         populatelineChart(chartData)
                     }
                 }

@@ -59,7 +59,6 @@ class TopLinksFragment : Fragment() {
         viewModel.userClickLiveData.observe(viewLifecycleOwner, Observer {
             when(it){
                 is NetworkResult.Success -> {
-                    Log.i("DINESH", it.data.toString())
                     if(it.data != null){
                         val userClickResponse :UserClickResponse = it.data
                         linkAdapter.differ.submitList(userClickResponse.data.top_links)
