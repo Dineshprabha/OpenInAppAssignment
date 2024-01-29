@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.dineshprabha.openinappassignment.ui.fragments.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/topLinksFragment"
+        android:name="com.dineshprabha.openinappassignment.ui.fragments.TopLinksFragment"
+        android:label="fragment_top_links"
+        tools:layout="@layout/fragment_top_links" />
+    <fragment
+        android:id="@+id/recentLinksFragment"
+        android:name="com.dineshprabha.openinappassignment.ui.fragments.RecentLinksFragment"
+        android:label="fragment_recent_links"
+        tools:layout="@layout/fragment_recent_links" />
+    <fragment
+        android:id="@+id/campaignFragment2"
+        android:name="com.dineshprabha.openinappassignment.ui.home.CampaignFragment"
+        android:label="fragment_campaign"
+        tools:layout="@layout/fragment_campaign" />
+    <fragment
+        android:id="@+id/courseFragment2"
+        android:name="com.dineshprabha.openinappassignment.ui.home.CourseFragment"
+        android:label="fragment_course"
+        tools:layout="@layout/fragment_course" />
+    <fragment
+        android:id="@+id/linksFragment"
+        android:name="com.dineshprabha.openinappassignment.ui.home.LinksFragment"
+        android:label="fragment_links"
+        tools:layout="@layout/fragment_links" />
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.dineshprabha.openinappassignment.ui.home.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
